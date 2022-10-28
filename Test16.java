@@ -4,15 +4,13 @@ public class Test16{
     public static void main(String[] args) {
 
         int i = 1;
-        int x = 0;
-        int count = 0;
-        
-        for(i = 1; i<=6;i++){
-            count=count*10+i;
-            for(x=0;x<6-i;x++){
-                    System.out.printf("*");
+
+        for(; i<=100000;i=i*10){
+            int x = 123456;
+            for(;x>i*10;x=x/10){
+                System.out.printf("*");
             }
-            System.out.println(count);
+            System.out.println(x);
         }
     }
     
